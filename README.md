@@ -1,4 +1,7 @@
-Welcome to your new dbt project!
+Welcome to my new dbt project!
+
+In this project, I executed a simple denormalization task using dbt. 
+
 
 ### Using the starter project
 
