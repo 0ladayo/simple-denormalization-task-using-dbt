@@ -1,0 +1,31 @@
+version: 2
+
+sources:
+  - name: dbt-project
+    database: data-pipeline-using-bq
+    schema: dbt_project
+    tables:
+      - name: customers
+        description: customers data
+        columns:
+          - name: customer_id
+            description: primary key for customers
+            tests:
+              - unique
+              - not_null
+      - name: orders
+        description: orders data
+        columns:
+          - name: order_id
+            description: primary key for customers
+            tests:
+              - unique
+              - not_null
+      - name: state
+        description: state data
+        columns:
+          - name: state_id
+            description: primary key for state
+            tests:
+              - unique
+              - not_null

@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: One unique customer per row
+    columns:
+      - name: customer_id
+        description: primary key for stg_customers
+        tests:
+          - unique
+          - not_null
+  - name: stg_orders
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: order_status
+        tests:
+          - accepted_values:
+              values:
+                - shipped
+                - canceled
+                - invoiced
+                - delivered
+                - processing
+                - unavailable
+  - name: stg_state
+    columns:
+      - name: state_id
+        description: primary key for stg_state
+        tests:
+          - unique
+          - not_null
+      - name: state_code
+        description: primary key for stg_state
+        tests:
+          - unique
+          - not_null
