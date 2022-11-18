@@ -8,7 +8,7 @@ In this project, I executed a simple denormalization task using dbt.
 
 ### Data Platform
 
-Big Query was used as the data platform
+BigQuery was used as the data platform
 
 ### Using the starter project
 
