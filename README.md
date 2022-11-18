@@ -1,7 +1,14 @@
-Welcome to my new dbt project!
+Welcome to my dbt project!
 
 In this project, I executed a simple denormalization task using dbt. 
 
+### Data lineage 
+
+![](https://github.com/0ladayo/simple-denormalization-task-using-dbt/blob/master/data%20lineage%20.jpg)
+
+### Data Platform
+
+Big Query was used as the data platform
 
 ### Using the starter project
 
